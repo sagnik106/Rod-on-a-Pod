@@ -14,4 +14,4 @@ Ever heard of elf on a shelf? Get ready for rod on a pod... This is a Reinforcem
 * [trained.py](https://github.com/sagnik106/Rod-on-a-Pod/blob/master/trained.py) - trying out different versions of trained weights
 
 ## Performance after 1500 epochs
-![cartpole](https://github.com/sagnik106/Pharmacy-Management/tree/master/resources/cartpole.gif)
+![cartpole](https://github.com/sagnik106/Rod-on-a-Pod/blob/master/resources/cartpole.gif)
