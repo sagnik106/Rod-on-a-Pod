@@ -4,7 +4,7 @@ import numpy as np
 from collections import deque
 import os
 
-env=gym.make('CartPole-v0')
+env=gym.make('MountainCar-v0')
 state_size = env.observation_space.shape[0]
 action_size=env.action_space.n
 
@@ -19,7 +19,7 @@ for e in range(episodes):
     state = np.reshape(state, [1, state_size])
 
     for time in range(5000):
-        env.render()
+        #env.render()
 
         action=agent.act(state)
 
@@ -40,5 +40,5 @@ for e in range(episodes):
     if len(agent.memory) > batch_size:
         agent.replay(batch_size)
     
-    if e% 100 ==0:
+    if e% 100000 ==0:
         agent.save("weights_%d.h5"%e)
